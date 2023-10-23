@@ -1,0 +1,13 @@
+{
+    "name": "bitsoftsol/laravel-administration",
+    "description": "Laravel administration is the autometically building the crud for web and apis when developer will create model and use the LaravelAdmin or LaravelAdminAPI Traits. Developer can build model and schema also using laravel administration interface.",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Bitsoftsol\\LaravelAdministration\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
