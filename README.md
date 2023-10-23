@@ -7,13 +7,13 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel Administration
+<h2>About Laravel Administration</h2>
 
 Laravel Administration library provides the facility to developer to create only model. Then if developer use the LaravelAdmin Trait in that model then, he/she not need to perform the crud operations like create routes, views and controller logics. Laravel administration will provide autometically crud operations, you can check from your interface by requesting the URL app-base-url/admin.
 
 If developer use the LaravelAdminAPI trait in model. Then laravel administration package will provide the all apis for crud, developer not need to perform create, read, list and delete apis for that model. Developer only need to get the model id and set that model ID into Postman attached collection and test the all apis after authentication.
 
-## Installation and Usage Instructions
+<h2>Installation and Usage Instructions</h2>
 
 You can install and use package by performing these instructions
 <h3>Create AUTO CRUD</h3>
