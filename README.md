@@ -149,11 +149,27 @@ In this section, we will guide you through performing automatic CRUD operations 
       ```php
       use Bitsoftsol\LaravelAdministration\Traits\LaravelAdminAPI;
 
-   + Add these two lines inside the Seller model class to include the traits:
+   + Add these two lines inside the `Seller` model class to include the traits:
 
       ```php
       use LaravelAdmin;
       use LaravelAdminAPI;
+
+3. **Define Fillable Fields:**
+
+   In the `Seller` model class, ensure that you add the field names to the `fillable` array:
+      
+      ```php
+      protected $fillable = [ "name", "email", "city", "country", "profile_image" ];
+
+3. **Run Migrations:**
+
+   Execute the migration to create the `sellers` table in your database:
+      
+      ```bash
+      php artisan migrate
+
+
 
    
 
