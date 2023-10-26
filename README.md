@@ -107,10 +107,10 @@ To get started with Laravel Administration, follow these steps:
      
 The `createsuperuser` command will prompt you to provide the following information:
 
-* __Username: Choose a unique username for the superuser.
-* __Email: Enter the email address associated with the superuser.
-* __Password: Set a secure password for the superuser.
-* __Confirm Password: Re-enter the password for confirmation.
+* __Username__: Choose a unique username for the superuser.
+* __Email__: Enter the email address associated with the superuser.
+* __Password__: Set a secure password for the superuser.
+* __Confirm Password__: Re-enter the password for confirmation.
 
 + After successfully providing the required information, the superuser account will be created.
 + You can now use the provided username and password to log in as the superuser and access the admin privileges.
@@ -124,10 +124,26 @@ The `createsuperuser` command will prompt you to provide the following informati
 
 Performing CRUD operations on the Seller model is straightforward with Laravel Administration.
 
-### Generate the Seller Model
+**Generate the Seller Model**
 
 Run the following Artisan command to create the Seller model and its migration:
 
 ```bash
 php artisan make:model Seller -m
+
+## Define Seller Table Fields
+
+Inside the generated migration file, you need to define the `Seller` table fields such as `name`, `email`, `city`, `country`, and `profile_image`.
+
+### Add LaravelAdmin and LaravelAdminAPI Traits
+
+To enhance the functionality of the `Seller` model, you should import the `LaravelAdmin` and `LaravelAdminAPI` traits at the top of the `Seller` model file. These traits provide features for easy CRUD operations and API support:
+
+```php
+use Bitsoftsol\LaravelAdministration\Traits\LaravelAdmin;
+use Bitsoftsol\LaravelAdministration\Traits\LaravelAdminAPI;
+
+
+
+
 
