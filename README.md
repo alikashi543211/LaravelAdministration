@@ -162,14 +162,16 @@ In this section, we will guide you through performing automatic CRUD operations 
       ```php
       protected $fillable = [ "name", "email", "city", "country", "profile_image" ];
 
-3. **Run Migrations:**
+4. **Run Migrations:**
 
    Execute the migration to create the `sellers` table in your database:
       
       ```bash
       php artisan migrate
 
+5. **Access the Admin Panel:**
 
+   Open your web browser and visit __`http://127.0.0.1:8000/admin`__. This is where you can manage your sellers with CRUD operations.
 
 
 
