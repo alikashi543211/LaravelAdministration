@@ -35,10 +35,13 @@ To get started with Laravel Administration, follow these steps:
 
 2. **Add LaravelAdminServiceProvider**:
 
-    Add the following line inside the providers array within `config/app.php`:
+    Open the `config/app.php` file and add the LaravelAdministration service provider to the `providers` array:
 
    ```php
-   Bitsoftsol\LaravelAdministration\LaravelAdminServiceProvider::class
+   'providers' => [
+       // ...
+       Bitsoftsol\LaravelAdministration\LaravelAdminServiceProvider::class,
+   ],
 
 3. **Publish Configuration Files:**:
 
