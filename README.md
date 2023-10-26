@@ -178,21 +178,7 @@ In this section, we will guide you through performing automatic CRUD operations 
    You are now able to perform CRUD operations on the __`Seller`__ model without the need for extensive coding.
 
    This guide empowers you to efficiently manage your sellers in your Laravel application.
-
-## Creating the Seller Model with Schema Builder
-
-In your Laravel Administration application, you can effortlessly create the `Seller` model and its associated migration file using the Schema Builder. Follow these steps:
-
-1. Access the Schema Builder:
-   - Open your web browser and navigate to `(host)/admin/crud-schema/create`. Make sure to replace `(host)` with the appropriate URL of your application.
-
-2. Enter the Model Name:
-   - In the provided field, enter the model name as 'Seller.'
-
-3. Submission:
-   - After entering the model name, click the 'Submit' button.
-
-Upon submission, Laravel Administration will generate both the `Seller` model and its migration file, making it convenient for you to manage sellers in your project. This streamlines the process of creating essential components for your application.
+   
 
 ## Seller CRUD APIs - Postman Guide
 
@@ -247,8 +233,53 @@ To use CRUD APIs for the `Seller` model, follow these steps:
 
    You can now perform CRUD operations on the `Seller` model without the need for additional coding. Enjoy the convenience of Laravel Administration for managing your sellers efficiently.
 
-   
+## Creating the Seller Model with Migration
 
+In the Laravel Administration application, you can effortlessly create the `Seller` model and its associated migration file using the Schema Builder. Here's how:
+
+1. Access the Schema Builder:
+   - Navigate to `(host)/admin/crud-schema/create` in your web browser, replacing `(host)` with your application's URL.
+
+2. Enter the Model Name:
+   - On the provided page, input 'Seller' as the model name.
+
+3. Submission:
+   - Click the 'Submit' button to initiate the generation of the `Seller` model and its corresponding migration file in your project.
+
+Upon successful creation, you'll be redirected to the Schema Builder list. Here, you can find the 'Seller' model in the list.
+
+### Managing Your Schema
+
+- **Deleting Schema:**
+  - To remove the 'Seller' model and its migration file from your project, click the 'Delete' button.
+
+- **Defining Schema Fields:**
+  - By clicking the 'Create Schema' button, you'll access a view where you can define the fields of the 'Seller' migration, including the ability to add more fields. If you wish to include image fields in the migration, ensure you suffix column names with '_image.'
+
+- **LaravelAdmin Trait:**
+  - On the 'Create Schema' view, you can select whether to use the 'LaravelAdmin' Trait by ticking the checkbox. If chosen, the trait will be automatically imported when defining seller field names.
+
+### Editing Schema
+
+After creating the schema, you'll find an 'Open Editor' button in the 'Seller' row within the Schema Builder listing. Clicking this button will redirect you to a Visual Code Editor view, allowing you to edit the 'Seller' migration and model files.
+
+- **LaravelAdminAPI and LaravelAdmin Traits:**
+  - In the live editor, you can use the 'LaravelAdminAPI' Trait if required, and include the 'LaravelAdmin' Trait if desired. These traits enhance the functionality of your 'Seller' model.
+
+- **Defining Fillable Fields:**
+  - Set the fields of the 'sellers' table in the `fillable` array. These fields will be displayed in the Seller listing view.
+
+### Migration
+
+After editing the model and migration files, you can click on the 'Migrate' button to apply the changes to your table. Once the seller table is migrated, you will no longer be able to open the editor or perform migrations, but you can still delete.
+
+### CRUD Operations
+
+- **LaravelAdmin Trait:**
+  - If you have included the 'LaravelAdmin' Trait in your Seller model, you can access Seller CRUD operations via the 'CRUD' tab on the web interface.
+
+- **LaravelAdminAPI Trait:**
+  - If you have included the 'LaravelAdminAPI' Trait in your Seller model, you can access Seller CRUD operation APIs using the Postman Collection.
 
 
 
