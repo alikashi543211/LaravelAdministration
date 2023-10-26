@@ -128,14 +128,14 @@ In this section, we will guide you through performing automatic CRUD operations 
 
    Run the following Artisan command to create the `Seller` model along with its migration file:
 
-   ```bash
-   php artisan make:model Seller -m
+      ```bash
+      php artisan make:model Seller -m
 
-1. **Define Seller Table Fields:**
+0. **Define Seller Table Fields:**
 
    Inside the generated migration file, define the `Seller` table fields, including `name`, `email`, `city`, `country`, and `profile_image`.
 
-2. **Add LaravelAdmin and LaravelAdminAPI Traits:**
+1. **Add LaravelAdmin and LaravelAdminAPI Traits:**
 
    Inside the generated migration file, define the `Seller` table fields, including `name`, `email`, `city`, `country`, and `profile_image`.
    Enhance the functionality of your `Seller` model by importing the `LaravelAdmin` and `LaravelAdminAPI` traits.
@@ -155,30 +155,44 @@ In this section, we will guide you through performing automatic CRUD operations 
       use LaravelAdmin;
       use LaravelAdminAPI;
 
-3. **Define Fillable Fields:**
+2. **Define Fillable Fields:**
 
    In the `Seller` model class, ensure that you add the field names to the __`fillable`__ array:
       
       ```php
       protected $fillable = [ "name", "email", "city", "country", "profile_image" ];
 
-4. **Run Migrations:**
+3. **Run Migrations:**
 
    Execute the migration to create the __`sellers`__ table in your database:
       
       ```bash
       php artisan migrate
 
-5. **Access the Admin Panel:**
+4. **Access the Admin Panel:**
 
    Open your web browser and visit __`http://127.0.0.1:8000/admin`__. This is where you can manage your sellers with CRUD operations.
 
-6. **Congratulations!**
+5. **Congratulations!**
 
    You are now able to perform CRUD operations on the __`Seller`__ model without the need for extensive coding.
 
    This guide empowers you to efficiently manage your sellers in your Laravel application.
 
+## Creating the Seller Model with Schema Builder
+
+In your Laravel Administration application, you can effortlessly create the `Seller` model and its associated migration file using the Schema Builder. Follow these steps:
+
+1. Access the Schema Builder:
+   - Open your web browser and navigate to `(host)/admin/crud-schema/create`. Make sure to replace `(host)` with the appropriate URL of your application.
+
+2. Enter the Model Name:
+   - In the provided field, enter the model name as 'Seller.'
+
+3. Submission:
+   - After entering the model name, click the 'Submit' button.
+
+Upon submission, Laravel Administration will generate both the `Seller` model and its migration file, making it convenient for you to manage sellers in your project. This streamlines the process of creating essential components for your application.
 
 ## Seller CRUD APIs - Postman Guide
 
