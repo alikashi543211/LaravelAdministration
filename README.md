@@ -54,3 +54,44 @@ To get started with Laravel Administration, follow these steps:
    ```sh
    npm install
    npm run dev
+
+5. **Set Database Connection:**:
+
+    Configure your database connection by setting the database name in your `.env` file.
+
+6. **Run Migrations:**:
+
+    Execute the database migrations and seed data:
+
+   ```sh
+   php artisan migrate --seed
+
+7. **Enable Authentication Routes:**:
+
+    Add the following line inside your `routes/web.php` file:
+
+   ```php
+   Auth::routes();
+
+8. **Serve Your Project:**:
+
+    Serve your Laravel project:
+
+   ```sh
+   php artisan serve
+
+9. **Access Laravel Administration:**:
+
+    Open your browser and access the URL `(host)/admin` (e.g., `http://127.0.0.1:8000/admin`).
+
+10. **Login Credentials:**:
+
+    Use the following credentials to log in:
+    + Username: admin@bitsoftsol.com
+    + Password: bitsoftsol123
+
+11. **Congratulations!:**:
+
+    You have successfully installed Laravel Administration.
+
+
