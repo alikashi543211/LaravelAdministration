@@ -107,14 +107,14 @@ To get started with Laravel Administration, follow these steps:
      
 The `createsuperuser` command will prompt you to provide the following information:
 
-* Username: Choose a unique username for the superuser.
-* Email: Enter the email address associated with the superuser.
-* Password: Set a secure password for the superuser.
-* Confirm Password: Re-enter the password for confirmation.
+* __Username: Choose a unique username for the superuser.
+* __Email: Enter the email address associated with the superuser.
+* __Password: Set a secure password for the superuser.
+* __Confirm Password: Re-enter the password for confirmation.
 
-* After successfully providing the required information, the superuser account will be created.
-* You can now use the provided username and password to log in as the superuser and access the admin privileges.
-* Creating a superuser allows you to manage and control various aspects of your Laravel application with elevated permissions.
++ After successfully providing the required information, the superuser account will be created.
++ You can now use the provided username and password to log in as the superuser and access the admin privileges.
++ Creating a superuser allows you to manage and control various aspects of your Laravel application with elevated permissions.
 
 12. **Congratulations!**:
 
