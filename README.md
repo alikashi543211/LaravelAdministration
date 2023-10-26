@@ -120,6 +120,7 @@ The `createsuperuser` command will prompt you to provide the following informati
 
     If you can log in and access the Laravel Administration dashboard, congratulations! You have successfully installed Laravel Administration.
 
+
 ## Usage Guide - Basic
 
 Performing CRUD operations on the Seller model is straightforward with Laravel Administration.
@@ -131,17 +132,8 @@ Run the following Artisan command to create the Seller model and its migration:
 ```bash
 php artisan make:model Seller -m
 
-## Define Seller Table Fields
 
-Inside the generated migration file, you need to define the `Seller` table fields such as `name`, `email`, `city`, `country`, and `profile_image`.
 
-### Add LaravelAdmin and LaravelAdminAPI Traits
-
-To enhance the functionality of the `Seller` model, you should import the `LaravelAdmin` and `LaravelAdminAPI` traits at the top of the `Seller` model file. These traits provide features for easy CRUD operations and API support:
-
-```php
-use Bitsoftsol\LaravelAdministration\Traits\LaravelAdmin;
-use Bitsoftsol\LaravelAdministration\Traits\LaravelAdminAPI;
 
 
 
