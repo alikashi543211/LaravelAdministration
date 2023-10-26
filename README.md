@@ -121,16 +121,9 @@ The `createsuperuser` command will prompt you to provide the following informati
     If you can log in and access the Laravel Administration dashboard, congratulations! You have successfully installed Laravel Administration.
 
 
-## Usage Guide - Basic
 
-Performing CRUD operations on the Seller model is straightforward with Laravel Administration.
 
-**Generate the Seller Model**
 
-Run the following Artisan command to create the Seller model and its migration:
-
-```bash
-php artisan make:model Seller -m
 
 
 
