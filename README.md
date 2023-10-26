@@ -98,15 +98,36 @@ To get started with Laravel Administration, follow these steps:
 
     To create a superuser for your Laravel application, follow these steps:
 
-   1. Open your terminal and navigate to the root directory of your Laravel project.
+     * Open your terminal and navigate to the root directory of your Laravel project.
    
-   2. Run the following command:
+     * Run the following command:
    
       ```sh
       php artisan createsuperuser
+     
+The `createsuperuser` command will prompt you to provide the following information:
+
+* Username: Choose a unique username for the superuser.
+* Email: Enter the email address associated with the superuser.
+* Password: Set a secure password for the superuser.
+* Confirm Password: Re-enter the password for confirmation.
+
+* After successfully providing the required information, the superuser account will be created.
+* You can now use the provided username and password to log in as the superuser and access the admin privileges.
+* Creating a superuser allows you to manage and control various aspects of your Laravel application with elevated permissions.
 
 12. **Congratulations!**:
 
     If you can log in and access the Laravel Administration dashboard, congratulations! You have successfully installed Laravel Administration.
 
+## Usage Guide - Basic
+
+Performing CRUD operations on the Seller model is straightforward with Laravel Administration.
+
+### Generate the Seller Model
+
+Run the following Artisan command to create the Seller model and its migration:
+
+```bash
+php artisan make:model Seller -m
 
