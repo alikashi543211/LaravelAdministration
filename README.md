@@ -91,11 +91,22 @@ To get started with Laravel Administration, follow these steps:
 10. **Login Credentials**:
 
     Use the following credentials to log in:
-    + Username: admin@bitsoftsol.com
-    + Password: bitsoftsol123
+       + Username: admin@bitsoftsol.com
+       + Password: bitsoftsol123
 
-11. **Congratulations!**:
+11. **Create a Superuser**:
 
-    You have successfully installed Laravel Administration.
+    To create a superuser for your Laravel application, follow these steps:
+
+   1. Open your terminal and navigate to the root directory of your Laravel project.
+   
+   2. Run the following command:
+   
+      ```sh
+      php artisan createsuperuser
+
+12. **Congratulations!**:
+
+    If you can log in and access the Laravel Administration dashboard, congratulations! You have successfully installed Laravel Administration.
 
 
