@@ -144,7 +144,7 @@ In this section, we will guide you through performing automatic CRUD operations 
       ```php
       use Bitsoftsol\LaravelAdministration\Traits\LaravelAdmin;
 
-   + Import the `LaravelAdminAPI` Trait on top of the `Seller` model class:
+   + Import the __`LaravelAdminAPI`__ Trait on top of the __`Seller`__ model class:
 
       ```php
       use Bitsoftsol\LaravelAdministration\Traits\LaravelAdminAPI;
@@ -157,14 +157,14 @@ In this section, we will guide you through performing automatic CRUD operations 
 
 3. **Define Fillable Fields:**
 
-   In the `Seller` model class, ensure that you add the field names to the `fillable` array:
+   In the `Seller` model class, ensure that you add the field names to the __`fillable`__ array:
       
       ```php
       protected $fillable = [ "name", "email", "city", "country", "profile_image" ];
 
 4. **Run Migrations:**
 
-   Execute the migration to create the `sellers` table in your database:
+   Execute the migration to create the __`sellers`__ table in your database:
       
       ```bash
       php artisan migrate
@@ -172,6 +172,12 @@ In this section, we will guide you through performing automatic CRUD operations 
 5. **Access the Admin Panel:**
 
    Open your web browser and visit __`http://127.0.0.1:8000/admin`__. This is where you can manage your sellers with CRUD operations.
+
+6. **Congratulations!**
+
+   You are now able to perform CRUD operations on the __`Seller`__ model without the need for extensive coding.
+
+   This guide empowers you to efficiently manage your sellers in your Laravel application.
 
 
 
