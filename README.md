@@ -43,12 +43,14 @@ To get started with Laravel Administration, follow these steps:
        Bitsoftsol\LaravelAdministration\LaravelAdminServiceProvider::class,
    ],
 
-3. **Publish Configuration Files:**:
+3. **Publish Vendor Files:**:
 
-    Run the command and select `LaravelAdminServiceProvider`:
+    Run the following Artisan command to publish vendor files:
 
    ```sh
    php artisan vendor:publish
+
+   Select the LaravelAdminServiceProvider when prompted.
 
 4. **Build Assets:**:
 
