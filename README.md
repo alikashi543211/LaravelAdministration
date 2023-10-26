@@ -180,6 +180,58 @@ In this section, we will guide you through performing automatic CRUD operations 
    This guide empowers you to efficiently manage your sellers in your Laravel application.
 
 
+## Seller CRUD APIs - Postman Guide
+
+To use CRUD APIs for the `Seller` model, follow these steps:
+
+1. **Import the Postman Collection:**
+
+   Import the provided Postman collection to access the CRUD APIs efficiently. You can download it from here: [Postman Collection - Laravel Administration](link-to-collection).
+
+2. **Import the Environment Variables:**
+
+   Import the environment variables configuration into Postman for seamless testing. You can download it from here: [Postman Environment - Laravel Administration](link-to-environment-variables).
+
+3. **Set the Host Variable:**
+
+   In Postman, configure the `host` variable to match your application's URL, typically something like `http://127.0.0.1:8000`.
+
+4. **Access the Login API:**
+
+   Make a POST request to the following API endpoint to log in:
+
+   - **API Endpoint:** `(host)/api/admin/login`
+   - **Credentials:**
+     - **Username:** admin@bitsoft.com
+     - **Password:** bitsoft123
+
+   After a successful login, you will receive an authentication token.
+
+5. **Set the Token Environment Variable:**
+
+   Once you receive the authentication token upon login, set it as the `(token)` environment variable in Postman for subsequent API requests.
+
+6. **Fetch the Model ID:**
+
+   Retrieve the `model_id` for the `Seller` model from the following API endpoint:
+
+   - **API Endpoint:** `{{host}}/api/admin/crud/models`
+
+   Set the obtained `model_id` as the `(model_id)` environment variable in Postman.
+
+7. **Access CRUD APIs for the Seller Model:**
+
+   You can now access the CRUD APIs for the `Seller` model using the environment variables:
+
+   - **Listing of Seller API:** `{{host}}/api/admin/crud/{{model_id}}`
+   - **Detail of Seller API:** `{{host}}/api/admin/crud/{{model_id}}/2` (where 2 represents the seller's ID)
+   - **Store Seller API:** `{{host}}/api/admin/crud/{{model_id}}`
+   - **Update Seller API:** `{{host}}/api/admin/crud/{{model_id}}` (include the seller's ID in the form-data within the body tab of Postman)
+   - **Delete Seller API:** `{{host}}/api/admin/crud/{{model_id}}/3` (where 3 represents the seller's ID)
+
+8. **Congratulations!**
+
+   You can now perform CRUD operations on the `Seller` model without the need for additional coding. Enjoy the convenience of Laravel Administration for managing your sellers efficiently.
 
    
 
