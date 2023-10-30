@@ -48,8 +48,8 @@ Before you start, make sure you have the following prerequisites installed on yo
 5. **Start the Development Server:**
 
    You can start the Laravel development server using the following command:
-   ```bash
-   php artisan serve
+      ```bash
+      php artisan serve
    This will start a local development server, and you can access your Laravel application in your web browser at `http://localhost:8000`.
   
 
