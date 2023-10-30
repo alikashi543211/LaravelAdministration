@@ -1,3 +1,58 @@
+# Installation Guide
+
+This guide will walk you through the process of setting up a Laravel project. Please follow these steps to ensure a smooth installation.
+
+## Prerequisites
+
+Before you start, make sure you have the following prerequisites installed on your system:
+
+- [XAMPP](https://www.apachefriends.org/index.html) with PHP version 7.4.33
+- [Composer](https://getcomposer.org/) (PHP dependency manager)
+
+## Installation Steps
+
+1. **XAMPP Installation:**
+
+   Download and install XAMPP with PHP version 7.4.33 by following the official [XAMPP installation instructions](https://www.apachefriends.org/index.html).
+
+2. **Composer Installation:**
+
+   If you don't have Composer installed, you can download and install it from [getcomposer.org](https://getcomposer.org/download/).
+
+3. **Clone the Laravel Project:**
+
+   Use the following command to clone your Laravel project from a repository or create a new one:
+
+   ```bash
+   git clone git@github.com:dputz/jkpportal-production.git
+   cd jkpportal-production
+
+4. **Install Project Dependencies:**
+
+   Run the following command to install Laravel project dependencies using Composer:
+   ```bash
+   composer update --ignore-platform-reqs
+
+4. **Configure the Environment:**
+
+   Copy the `.env.example` file to a new `.env` file and configure your environment settings, such as the database connection and application key. You can generate an   application key using the following command:
+   ```bash
+   php artisan key:generate
+   
+5. **Migrate the Database:**
+
+   Run the following command to migrate your database and create the necessary tables:
+   ```bash
+   php artisan migrate
+
+5. **Start the Development Server:**
+
+   You can start the Laravel development server using the following command:
+   ```bash
+   php artisan serve
+This will start a local development server, and you can access your Laravel application in your web browser at `http://localhost:8000`.
+  
+
 ## Setup Auto Deployment
 you need to follow these steps to setup auto deployment 
 
